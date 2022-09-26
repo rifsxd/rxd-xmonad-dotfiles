@@ -4,7 +4,7 @@
 ## Autostart Programs
 
 # Kill already running process
-_ps=(picom dunst xfsettingsd spotifyd ntfd playerctld ksuperkey ntfd mpd xfce-polkit xfce4-power-manager)
+_ps=(picom dunst xfsettingsd spotifyd conky ntfd playerctld ksuperkey ntfd mpd xfce-polkit xfce4-power-manager)
 for _prs in "${_ps[@]}"; do
 	if [[ `pidof ${_prs}` ]]; then
 		killall -9 ${_prs}
@@ -43,6 +43,9 @@ ksuperkey -e 'Super_R=Alt_L|F1' &
 
 # Restore wallpaper
 nitrogen --restore
+
+# Conky widget
+~/.config/conky/Fornax/start.sh
 
 # Lauch notification daemon
 ~/.xmonad/bin/xmodunst.sh
