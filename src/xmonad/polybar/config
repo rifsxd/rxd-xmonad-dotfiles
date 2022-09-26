@@ -140,7 +140,7 @@ font-5 = "Material Icons:size=10"
 ;   modules-center = xwindow xbrightness
 ;   modules-right = ipc clock
 
-modules-left = spacer workspaces sep2 xkill sep title
+modules-left = spacer menu sep2 workspaces sep2 xkill sep title
 modules-center = player-mpris-tail sep2 cpu sep used-memory sep filesystem
 modules-right = weather sep pulseaudio sep speed sep date spacer
 

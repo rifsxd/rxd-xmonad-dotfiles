@@ -858,7 +858,7 @@ type = internal/xwindow
 ; Available tags:
 ;   <label> (default)
 format = <label>
-format-prefix = 
+format-prefix = 
 
 ; Available tokens:
 ;   %title%
@@ -897,10 +897,10 @@ enable-scroll = true
 icon-0 = 1;
 icon-1 = 2;
 icon-2 = 3;
-icon-3 = 4;
-icon-4 = 5;
-icon-5 = 6;
-icon-6 = 7;
+icon-3 = 4;
+icon-4 = 5;
+icon-5 = 6;
+icon-6 = 7;
 icon-7 = 8;
 icon-8 = 9;
 icon-9 = 10;
@@ -1003,7 +1003,7 @@ format-foreground = ${color.CYAN}
 
 [module/xkill]
 type = custom/text
-content = 窱
+content = 
 content-font = 2
 content-background = ${color.BGL}
 content-foreground = ${color.RED}
@@ -1025,6 +1025,23 @@ format = <label>
 format-prefix = "  "
 format-prefix-font = 1
 format-prefix-foreground = ${color.BLUE}
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/menu]
+type = custom/text
+
+content = 
+content-font = 2
+content-foreground = #CAA575
+content-padding = 0
+
+click-left = ~/.xmonad/rofi/bin/launcher
+;;click-middle = path_to_script
+;;click-right = path_to_script
+
+;;scroll-up = path_to_script
+;;scroll-down = path_to_script
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
