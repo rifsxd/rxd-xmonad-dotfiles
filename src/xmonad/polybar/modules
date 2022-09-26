@@ -247,7 +247,7 @@ interval = 1
 ;   <ramp-coreload>
 ;;format = <label> <ramp-coreload>
 format = <label>
-format-prefix = 
+format-prefix = 
 
 ; Available tokens:
 ;   %percentage% (default) - total cpu load averaged over all cores
@@ -411,7 +411,7 @@ interval = 5
 format = <label>
 format-background = ${color.BGL}
 
-format-prefix = 
+format-prefix = 
 
 format-prefix-foreground = ${color.BLUE}
 
