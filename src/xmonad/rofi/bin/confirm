@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+## Everyone is permitted to copy and distribute copies of this file under GNU-GPL3
+
+rofi -dmenu\
+     -i\
+     -no-fixed-num-lines\
+     -p "Are You Sure? : "\
+     -theme ~/.xmonad/rofi/themes/confirm.rasi

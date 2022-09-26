@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+## Everyone is permitted to copy and distribute copies of this file under GNU-GPL3
+
+DIR="$HOME/.xmonad"
+
+rofi -no-lazy-grab -show window -theme $DIR/rofi/themes/window.rasi
