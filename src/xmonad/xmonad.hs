@@ -129,19 +129,19 @@ myKeys conf@(XConfig {XMonad.modMask = super}) = M.fromList $
 
     -- Change gaps on the fly
     , ((super .|. controlMask,   xK_g), sendMessage $ ToggleGaps)                   -- toggle all gaps
-    , ((super .|. shiftMask,   xK_g), sendMessage $ setGaps [(L,50), (R,50), (U,80), (D,50)])   -- reset the GapSpec
+    , ((super .|. mod1Mask,   xK_g), sendMessage $ setGaps [(L,50), (R,50), (U,80), (D,50)])   -- reset the GapSpec
     
     , ((super .|. controlMask,   xK_t), sendMessage $ IncGap 10 L)     -- increment the left-hand gap
-    , ((super .|. shiftMask,   xK_t), sendMessage $ DecGap 10 L)     -- decrement the left-hand gap
+    , ((super .|. mod1Mask,   xK_t), sendMessage $ DecGap 10 L)     -- decrement the left-hand gap
     
     , ((super .|. controlMask,   xK_y), sendMessage $ IncGap 10 U)     -- increment the top gap
-    , ((super .|. shiftMask,   xK_y), sendMessage $ DecGap 10 U)     -- decrement the top gap
+    , ((super .|. mod1Mask,   xK_y), sendMessage $ DecGap 10 U)     -- decrement the top gap
     
     , ((super .|. controlMask,   xK_u), sendMessage $ IncGap 10 D)     -- increment the bottom gap
-    , ((super .|. shiftMask,   xK_u), sendMessage $ DecGap 10 D)     -- decrement the bottom gap
+    , ((super .|. mod1Mask,   xK_u), sendMessage $ DecGap 10 D)     -- decrement the bottom gap
 
     , ((super .|. controlMask,   xK_i), sendMessage $ IncGap 10 R)     -- increment the right-hand gap
-    , ((super .|. shiftMask,   xK_i), sendMessage $ DecGap 10 R)     -- decrement the right-hand gap
+    , ((super .|. mod1Mask,   xK_i), sendMessage $ DecGap 10 R)     -- decrement the right-hand gap
 
   -- Window Manager Specific -----------------------------------------
 
