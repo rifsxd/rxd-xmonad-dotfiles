@@ -4,7 +4,7 @@
 ## Autostart Programs
 
 # Kill already running process
-_ps=(picom dunst xfsettingsd spotifyd conky ntfd playerctld ksuperkey ntfd mpd xfce-polkit xfce4-power-manager)
+_ps=(picom dunst xfsettingsd spotifyd conky ntfd playerctld ksuperkey ntfd xfce-polkit xfce4-power-manager)
 for _prs in "${_ps[@]}"; do
 	if [[ `pidof ${_prs}` ]]; then
 		killall -9 ${_prs}
